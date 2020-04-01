@@ -1,38 +1,56 @@
+/*main page*/
 .App {
+  background-color: #FFFFFF;
+  height: 100%;
+  width:  100%;
+  position: absolute;
+}
+.AboutMe{
+  background-color: #FFFFFF;
+  height: 100%;
+  width:  100%;
+  position: absolute;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+}
+.Projects{
+  background-color: #FFFFFF;
+  height: 100%;
+  width:  100%;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+}
+
+/*TopMenu*/
+.menuButtons {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  width: 200px;
+  justify-content: space-around;
+  background-color: rgb(247, 202, 202);
+  top: 0;
+  z-index: 10;
+}
+
+
+/*profileImage*/
+.profileImageBackground {
+  margin-top: 30px;
+  background-color: #2479e7;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+/*socials*/
+.socials {
+  float: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.git {
+  height: 50px;
 }
