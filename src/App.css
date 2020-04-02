@@ -1,22 +1,20 @@
 /*main page*/
 .App {
-  background-color: #FFFFFF;
+  background-image: url(./res/ForestBackground.jpg);
   height: 100%;
-  width:  100%;
+  width: 100%;
   position: absolute;
 }
-.AboutMe{
-  background-color: #FFFFFF;
+.AboutMe {
   height: 100%;
-  width:  100%;
+  width: 100%;
   position: absolute;
   text-align: center;
   align-items: center;
 }
-.Projects{
-  background-color: #FFFFFF;
+.Projects {
   height: 100%;
-  width:  100%;
+  width: 100%;
   position: absolute;
   text-align: center;
   align-items: center;
@@ -26,19 +24,18 @@
 .menuButtons {
   display: flex;
   position: absolute;
+  padding: 10px;
   right: 0px;
-  width: 200px;
+  width: 230px;
   justify-content: space-around;
-  background-color: rgb(247, 202, 202);
   top: 0;
   z-index: 10;
 }
 
-
 /*profileImage*/
 .profileImageBackground {
   margin-top: 30px;
-  background-color: #2479e7;
+  background-color: #de7119;
   height: 200px;
   width: 200px;
   border-radius: 100px;
@@ -48,9 +45,6 @@
 }
 
 /*socials*/
-.socials {
-  float: left;
-}
-.git {
+.imageScale {
   height: 50px;
 }

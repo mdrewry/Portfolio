@@ -1,10 +1,29 @@
 import React from "react";
-
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
+const useStyles = makeStyles(theme => ({
+  buttons: {
+    color: "#de7119"
+  }
+}));
 const TopMenu = props => {
+  const classes = useStyles();
   return (
     <div className="menuButtons">
-      <h3 className="AMButton" onClick={() => props.setDisp(1)}>About Me</h3>
-      <h3 className="ProjectsButton" onClick={() => props.setDisp(2)}>Projects</h3>
+      <Button
+        className={classes.buttons}
+        variant="contained"
+        onClick={() => props.setDisp(1)}
+      >
+        About Me
+      </Button>
+      <Button
+        className={classes.buttons}
+        variant="contained"
+        onClick={() => props.setDisp(2)}
+      >
+        Projects
+      </Button>
     </div>
   );
 };
