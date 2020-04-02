@@ -51,7 +51,12 @@ const Socials = () => {
           <Typography className={classes.CardBody}>(954)681-1293</Typography>
         </Box>
         <Box className={classes.SocialTag}>
-          <img className={classes.socailImage} alt="" src={gitImage} />
+          <img
+            className={classes.socailImage}
+            alt=""
+            src={gitImage}
+            onClick={e => handleClick()}
+          />
           <Typography className={classes.CardBody}>
             github.com/mdrewry
           </Typography>
