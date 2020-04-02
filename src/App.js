@@ -5,7 +5,7 @@ import AboutMe from "./Components/AboutMe.js";
 function App() {
   const [dispPage, setDisp] = useState(1);
   const Page = () => {
-    if (dispPage == 1)
+    if (dispPage === 1)
       return (
         <div>
           <AboutMe></AboutMe>

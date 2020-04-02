@@ -68,18 +68,7 @@ const AboutMe = () => {
       <Box className={classes.AboutMe}>
         <Grid container className={classes.AboutGrid}>
           <Grid item xs={2}>
-            <Card className={classes.CardMain}>
-              <CardContent>
-                <Typography className={classes.Title}>Contact Me</Typography>
-                <Typography className={classes.CardBody}>
-                  mdrewry0@gmail.com
-                </Typography>
-                <Typography className={classes.CardBody}>
-                  (954)681-1293
-                </Typography>
-                <Socials />
-              </CardContent>
-            </Card>
+            <Socials />
           </Grid>
           <Grid item xs={5}>
             <Card className={classes.CardMain}>
@@ -87,7 +76,7 @@ const AboutMe = () => {
                 <Typography className={classes.Title}>
                   Experience With:
                 </Typography>
-                <Experience></Experience>
+                <Experience />
               </CardContent>
             </Card>
           </Grid>
