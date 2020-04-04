@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     width: "100%"
   },
   Paper: {
-    backgroundColor: "rgb(202, 247, 224)",
+    backgroundColor: "FFFFFF",
     height: "100px"
   },
   AboutGrid: {
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: 12
   },
   CardMainMinor: {
-    backgroundColor: "#dee3e2",
+    backgroundColor: "#FFFFFF",
     height: "175px",
     display: "flex",
     flexDirection: "column",
@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center"
   },
   CardMainMajor: {
-    backgroundColor: "#dee3e2",
+    backgroundColor: "#FFFFFF",
     display: "flex",
     flexDirection: "column"
   },
