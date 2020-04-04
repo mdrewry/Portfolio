@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: 12
   },
   CardMainMinor: {
-    backgroundColor: "#dee3e2",
+    backgroundColor: "#FFFFFF",
     height: "175px",
     display: "flex",
     flexDirection: "column",
