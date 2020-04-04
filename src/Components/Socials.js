@@ -14,12 +14,13 @@ const useStyles = makeStyles(theme => ({
   CardBody: {
     fontSize: 12
   },
-  CardMain: {
+  CardMainMinor: {
     backgroundColor: "#dee3e2",
-    height: "150px",
+    height: "175px",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-around"
+    justifyContent: "space-around",
+    alignItems: "center"
   },
   socailImage: {
     height: "25px"
@@ -37,7 +38,7 @@ const Socials = () => {
     window.location = "https://github.com/mdrewry";
   };
   return (
-    <Card className={classes.CardMain}>
+    <Card className={classes.CardMainMinor}>
       <CardContent>
         <Typography className={classes.Title}>Contact Me</Typography>
         <Box className={classes.SocialTag}>

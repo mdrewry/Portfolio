@@ -3,15 +3,13 @@ import { Box, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import Socials from "./Socials.js";
-import Experience from "./Experience.js";
-import ProfileImage from "./ProfileImage.js";
+import CenterObject from "./CenterObject.js";
 import "../App.css";
 import Button from "@material-ui/core/Button";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles(theme => ({
   AboutMe: {
-    marginTop: "100px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -22,7 +20,8 @@ const useStyles = makeStyles(theme => ({
     height: "100px"
   },
   AboutGrid: {
-    justifyContent: "space-around"
+    justifyContent: "space-around",
+    alignItems: "center"
   },
   Title: {
     fontSize: 20
@@ -30,12 +29,18 @@ const useStyles = makeStyles(theme => ({
   CardBody: {
     fontSize: 12
   },
-  CardMain: {
+  CardMainMinor: {
     backgroundColor: "#dee3e2",
-    height: "150px",
+    height: "175px",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-around"
+    justifyContent: "space-around",
+    alignItems: "center"
+  },
+  CardMainMajor: {
+    backgroundColor: "#dee3e2",
+    display: "flex",
+    flexDirection: "column"
   },
   ResumeLink: {
     marginTop: "50px",
@@ -46,42 +51,26 @@ const useStyles = makeStyles(theme => ({
   },
   Intro: {
     marginTop: "50px"
-  },
-  UFText: {
-    textDecoration: "underline",
-    textDecorationColor: "#de7119",
-    textDecorationThickness: "solid"
   }
 }));
 const AboutMe = () => {
   const classes = useStyles();
   return (
     <div className="AboutMe">
-      <div className={classes.Intro}>
-        <ProfileImage></ProfileImage>
-        <h3 contenteditable>
-          Hello, my name is Mark Drewry and I am currently studying{" "}
-          <span className={classes.UFText}>computer science</span> at the
-          University of Florida.
-        </h3>
-      </div>
       <Box className={classes.AboutMe}>
         <Grid container className={classes.AboutGrid}>
           <Grid item xs={2}>
             <Socials />
           </Grid>
           <Grid item xs={5}>
-            <Card className={classes.CardMain}>
+            <Card className={classes.CardMainMajor}>
               <CardContent>
-                <Typography className={classes.Title}>
-                  Experience With:
-                </Typography>
-                <Experience />
+                <CenterObject />
               </CardContent>
             </Card>
           </Grid>
           <Grid item xs={2}>
-            <Card className={classes.CardMain}>
+            <Card className={classes.CardMainMinor}>
               <CardContent>
                 <Typography className={classes.Title}>Courses Taken</Typography>
                 <Typography className={classes.CardBody}>
